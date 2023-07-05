@@ -1,11 +1,11 @@
-#include <iostream>
+п»ї#include <iostream>
 using namespace std;
 
 class Fraction
 {
-	int integer;//целая часть
-	int numerator;//числитель
-	int denominator;//знаменатель
+	int integer;//С†РµР»Р°СЏ С‡Р°СЃС‚СЊ
+	int numerator;//С‡РёСЃР»РёС‚РµР»СЊ
+	int denominator;//Р·РЅР°РјРµРЅР°С‚РµР»СЊ
 public:
 	int get_integer()const
 	{
@@ -116,7 +116,7 @@ public:
 			more = less;
 			less = rest;
 		} while (rest);
-		int GCD = more;//GCD-Greatest Common Divisor(наибльший общтй делитель)
+		int GCD = more;//GCD-Greatest Common Divisor(РЅР°РёР±Р»СЊС€РёР№ РѕР±С‰С‚Р№ РґРµР»РёС‚РµР»СЊ)
 		numerator /= GCD;
 		denominator /= GCD;
 		return *this;
@@ -124,7 +124,7 @@ public:
 
 	void print()const
 	{
-		if (integer)cout << integer;//если есть целая часть выводим ее на экран
+		if (integer)cout << integer;//РµСЃР»Рё РµСЃС‚СЊ С†РµР»Р°СЏ С‡Р°СЃС‚СЊ РІС‹РІРѕРґРёРј РµРµ РЅР° СЌРєСЂР°РЅ
 		if (numerator)
 		{
 			if (integer)cout << "(";
